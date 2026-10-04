@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Retro Pi Saves: personal game save synchronization between a Batocera Pi and a PC using Google Drive.">
+  <title>Retro Pi Saves</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <p class="eyebrow">PERSONAL SAVE SYNC</p>
+    <h1>Retro Pi Saves</h1>
+    <p class="lead">Keep your game progress with you.</p>
+    <p>Retro Pi Saves is a personal utility maintained by <a href="https://github.com/ryan97535">ryan97535</a>. It synchronizes selected emulator battery saves between a Batocera Raspberry Pi and a Windows PC through the owner's Google Drive.</p>
+    <section>
+      <h2>Play locally. Sync when connected.</h2>
+      <p>Each device keeps a local save and archives changed versions. When an internet connection is available and the emulator is closed, the utility uploads and downloads save versions directly through Google Drive.</p>
+      <p>If devices change a save independently, both versions are retained before the version with the newer save timestamp becomes active. An archived version can be restored manually. Timestamps do not measure in-game progress.</p>
+    </section>
+    <section>
+      <h2>Why Google Drive access is needed</h2>
+      <p>The desktop utility uses Google OAuth and rclone to access the configured save folder, upload save data and version metadata, and download saves onto the owner's devices. Its current OAuth scope grants broad Drive file access; the utility is configured to operate within the designated save folder. The folder setting does not narrow the underlying OAuth permission.</p>
+      <p>This website is informational. It does not provide a sign-in form, receive saves, or store Google credentials. The utility is intended for the owner's personal use, and is not a public account service.</p>
+    </section>
+    <footer><a href="privacy.html">Privacy policy</a><span aria-hidden="true"> / </span><a href="https://github.com/ryan97535">Maintainer</a></footer>
+  </main>
+</body>
+</html>
